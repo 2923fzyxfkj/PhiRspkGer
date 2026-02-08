@@ -418,7 +418,7 @@ class MainWindow(QMainWindow):
         label5.setFixedWidth(80)
         row3_layout.addWidget(label5)
         self.fx_frame_width_spinbox = QSpinBox()
-        self.fx_frame_width_spinbox.setRange(1, 200)
+        self.fx_frame_width_spinbox.setRange(1, 2147483647)
         self.fx_frame_width_spinbox.setValue(DEFAULT_FX_FRAME_WIDTH)
         row3_layout.addWidget(self.fx_frame_width_spinbox)
         
@@ -427,7 +427,7 @@ class MainWindow(QMainWindow):
         label6.setFixedWidth(80)
         row3_layout.addWidget(label6)
         self.fx_frame_height_spinbox = QSpinBox()
-        self.fx_frame_height_spinbox.setRange(1, 200)
+        self.fx_frame_height_spinbox.setRange(1, 2147483647)
         self.fx_frame_height_spinbox.setValue(DEFAULT_FX_FRAME_HEIGHT)
         row3_layout.addWidget(self.fx_frame_height_spinbox)
         row3_layout.addStretch()  # 添加弹性空间
